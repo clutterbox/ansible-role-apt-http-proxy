@@ -1,0 +1,7 @@
+#jinja2: trim_blocks: True, lstrip_blocks: True
+{% if apt_http_proxy is defined %}
+Acquire::http::Proxy "{{ apt_http_proxy }}";
+{% for host in apt_http_proxy_direct|default([]) %}
+Acquire::HTTP::Proxy::{{ host }} "DIRECT";
+{% endfor %}
+{% endif %}

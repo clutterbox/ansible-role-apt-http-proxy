@@ -1,0 +1,4 @@
+---
+- name: Generate apt http proxy config
+  template: src=01proxy.j2 dest=/etc/apt/apt.conf.d/01proxy owner=root group=root mode=0644
+  when: apt_http_proxy is defined
