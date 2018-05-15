@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - clutterbox.apt-http-proxy
+    - role_under_test
