@@ -35,7 +35,7 @@ Example Playbook
 License
 -------
 
-CC0
+MIT Licsense
 
 Author Information
 ------------------
